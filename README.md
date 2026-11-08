@@ -1,22 +1,12 @@
 # Simple-Microwave-Simulator
 
-A rough interactive microwave model built with HTML, CSS, and JavaScript. It demonstrates how cooking time, button presses, and the door influence the microwave's behavior.
-
-## Controls and behavior
-
-- **+30 seconds:** Add cooking time before starting or while paused, up to 99:30. This button is disabled during cooking and the completion flash.
-- **Start/Stop:** One button that starts or resumes cooking when time remains and the door is closed. While cooking, it becomes Stop; pressing it pauses the countdown and keeps the remaining time.
-- **Clear:** Reset the time to zero. Available only while idle, ready, or paused; disabled during cooking and the completion flash.
-- **Open/Close door:** Opening the door pauses cooking. Closing it does not automatically resume cooking; press Start to resume.
-- **Completion:** When the countdown reaches zero, cooking stops and the light flashes for three seconds before returning to idle. With reduced-motion settings, the light stays on during those three seconds instead of flashing.
-
-States are tracked internally rather than shown as labels. Reheat, Popcorn, Defrost, and Power Level settings are not included.
+For this project, I want to simulate when time is set, the start button is pressed and the door is closed, the microwave turns on and starts working. Basically modeling how several important conditions that are mainly being interacted can influence the microwave's behavior. The main user inputs will include entering a cooking time, pressing Start, Stop/Clear, and opening or closing the microwave door. Additional functions such as Reheat, Popcorn, Defrost, or Power Level settings will not be included because I want to only focus on those basic interactions that explain the foundational logic of a microwave. These functions usually use preset cooking times and power levels for specific purposes, but they still follow similar underlying logic. 
 
 ## Files
 
 - `index.html` — page structure and controls.
 - `style.css` — microwave appearance and animations.
-- `script.js` — event listeners, countdown, and behavior logic.
+- `script.js` — behavior logic.
 - `README.md` — project description and instructions.
 
 No external libraries or package dependencies are required.
@@ -47,4 +37,3 @@ To download later updates, run `git pull` inside the cloned folder after committ
 
 ## AI use: Codex
 
-OpenAI Codex assisted with refining the appliance rules, implementing and updating the HTML, CSS, and JavaScript, explaining events and event listeners, and reviewing this README.
