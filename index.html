@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Microwave Model</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><h1>Simple Microwave Simulator</h1><p>Set the time, close the door, and press Start. Press again to stop.</p></header>
+    <section class="microwave" aria-label="Microwave simulation">
+      <div class="door" id="door">
+        <div class="window">
+          <div class="inside"><div class="steam">≈ ≈ ≈</div><div class="bowl"></div><div class="plate"></div></div>
+        </div>
+        <div class="handle"></div>
+      </div>
+      <div class="controls">
+        <div class="display">
+          <span class="finish-light" aria-hidden="true"></span>
+          <strong id="timer" aria-label="Remaining cooking time">00:00</strong>
+        </div>
+        <button id="add-time">+30 seconds <span>＋</span></button>
+        <button id="start" class="primary">Start</button>
+        <button id="clear">Clear</button>
+        <button id="toggle-door" class="door-button" aria-pressed="false">Open door</button>
+      </div>
+    </section>
+    <p id="message" role="status" aria-live="polite"></p>
+    <footer><p>Opening the door or pressing Stop pauses the countdown. Close the door and press Start to resume. Clear resets the time. When cooking finishes, the light flashes for three seconds, then turns off.</p></footer>
+  </main>
+</body>
+</html>
